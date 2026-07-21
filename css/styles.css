@@ -105,6 +105,24 @@ body {
 .gallery-item:hover img {
   transform: scale(1.06);
 }
+.gallery-item {
+  cursor: pointer;
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+}
+#lightbox.active {
+  display: flex;
+}
+#lightbox-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 1;
+}
 
 /* Form */
 .form-input {
