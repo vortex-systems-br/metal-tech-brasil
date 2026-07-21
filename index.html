@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metal Tech Brasil | Serralheria e Coberturas Metálicas em Araçatuba</title>
+  <meta name="description" content="Metal Tech Brasil - Serralheria em Araçatuba. Portões, pergolados, estruturas metálicas, portas e pintura. 7 anos de experiência, garantia e entrega no prazo. Orçamento sem compromisso." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://metaltechbrasil.com.br/" />
+  <link rel="icon" href="images/logo.jfif" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jfif" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metaltechbrasil.com.br/" />
+  <meta property="og:title" content="Metal Tech Brasil | Serralheria e Coberturas Metálicas" />
+  <meta property="og:description" content="Portões, pergolados, estruturas metálicas e coberturas em Araçatuba. 7 anos de experiência, garantia e entrega no prazo." />
+  <meta property="og:image" content="images/logo.jfif" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Metal Tech Brasil" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metal Tech Brasil | Serralheria em Araçatuba" />
+  <meta name="twitter:description" content="Portões, pergolados e estruturas metálicas com garantia e prazo. Orçamento sem compromisso." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Space Grotesk', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              DEFAULT: '#c9a227',
+              light: '#e0b93c',
+              dark: '#a6851e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Metal Tech Brasil",
+    "description": "Serralheria e Coberturas Metálicas em Araçatuba. Portões, pergolados, estruturas metálicas, portas e pintura.",
+    "url": "https://metaltechbrasil.com.br",
+    "telephone": "+5518998268952",
+    "email": "Juniofabricio852@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua José Luis Mendes, 169",
+      "addressLocality": "Araçatuba",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -21.2089,
+      "longitude": -50.4328
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "areaServed": "Araçatuba e região",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="bg-black text-gray-200 antialiased">
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-3">
+          <img src="images/logo.jfif" alt="Metal Tech Brasil" class="h-11 w-11 md:h-12 md:w-12 rounded-full object-cover border border-gold/40 shadow-md" />
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="#servicos" class="nav-link">Serviços</a>
+          <a href="#trabalhos" class="nav-link">Trabalhos</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/5518998268952?text=Olá! Vim pelo site da Metal Tech Brasil. Gostaria de um orçamento."
+             target="_blank" rel="noopener"
+             class="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.85 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-black/95 border-t border-gray-800">
+      <div class="px-4 py-4 space-y-2">
+        <a href="#servicos" class="block py-2 text-gray-300">Serviços</a>
+        <a href="#trabalhos" class="block py-2 text-gray-300">Trabalhos</a>
+        <a href="#sobre" class="block py-2 text-gray-300">Sobre</a>
+        <a href="#contato" class="block py-2 text-gray-300">Contato</a>
+        <a href="https://wa.me/5518998268952?text=Olá! Vim pelo site da Metal Tech Brasil."
+           target="_blank"
+           class="flex items-center justify-center gap-2 mt-3 bg-[#25D366] text-white font-semibold py-3 rounded-lg">
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="relative min-h-screen flex items-center pt-20">
+    <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-950 to-black"></div>
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-1/3 left-1/4 w-96 h-96 bg-gold/20 rounded-full blur-[120px]"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 text-gold text-sm font-medium px-4 py-1.5 rounded-full mb-6 reveal">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Atendendo Araçatuba e região
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 reveal">
+            Serralheria e<br />
+            <span class="text-gold">Coberturas Metálicas</span>
+          </h1>
+
+          <p class="text-lg text-gray-400 mb-8 max-w-lg reveal">
+            Portões, pergolados, estruturas metálicas e muito mais. 
+            <strong class="text-white">7 anos de experiência</strong>, garantia e entrega no prazo.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 reveal">
+            <a href="https://wa.me/5518998268952?text=Olá! Gostaria de solicitar um orçamento."
+               target="_blank" rel="noopener"
+               class="btn-gold inline-flex items-center justify-center gap-2 text-lg px-8 py-4 rounded-xl">
+              Solicitar Orçamento
+            </a>
+            <a href="#trabalhos" class="btn-outline inline-flex items-center justify-center gap-2 text-lg px-8 py-4 rounded-xl">
+              Ver Trabalhos
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero image -->
+        <div class="reveal hidden lg:block">
+          <div class="relative rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
+            <img src="images/works/portao-01.jfif" alt="Portão fabricado pela Metal Tech Brasil" class="w-full h-80 object-cover" width="600" height="320" fetchpriority="high" />
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
+              <div class="text-gold font-semibold">Portões sob medida</div>
+              <div class="text-sm text-gray-300">Qualidade e acabamento profissional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="border-y border-gray-800 bg-gray-950 py-5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-wrap justify-center md:justify-between gap-6 text-sm font-medium text-gray-400">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          7 anos de experiência
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Garantia nos serviços
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Entrega no prazo
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Orçamento sem compromisso
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVIÇOS ========== -->
+  <section id="servicos" class="py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Nossos Serviços</h2>
+        <p class="text-gray-400 text-lg">Soluções completas em serralheria com qualidade e prazo</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Portões</h3>
+          <p class="text-gray-400 text-sm mb-5">Portões sob medida, basculantes, deslizantes e com portão de pedestre. Acabamento de qualidade.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para portão." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Pergolados</h3>
+          <p class="text-gray-400 text-sm mb-5">Pergolados metálicos modernos e resistentes para áreas externas, varandas e jardins.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para pergolado." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Estruturas Metálicas</h3>
+          <p class="text-gray-400 text-sm mb-5">Estruturas sob medida para diversos usos: coberturas, bases, móveis metálicos e mais.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para estrutura metálica." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Coberturas</h3>
+          <p class="text-gray-400 text-sm mb-5">Coberturas metálicas para pátios, garagens e áreas externas com estrutura reforçada.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para cobertura metálica." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Portas</h3>
+          <p class="text-gray-400 text-sm mb-5">Portas metálicas residenciais e comerciais, com ou sem vidro, sob medida.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para porta metálica." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+
+        <div class="service-card p-7 reveal">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Pintura de Portão</h3>
+          <p class="text-gray-400 text-sm mb-5">Pintura e revitalização de portões com acabamento profissional e durabilidade.</p>
+          <a href="https://wa.me/5518998268952?text=Olá! Quero orçamento para pintura de portão." target="_blank" class="text-gold font-semibold text-sm hover:underline">Pedir orçamento →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRABALHOS (GALERIA) ========== -->
+  <section id="trabalhos" class="py-24 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Nossos Trabalhos</h2>
+        <p class="text-gray-400 text-lg">Alguns dos projetos realizados pela Metal Tech Brasil</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/portao-01.jfif" alt="Portão cinza instalado" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/portao-02.jfif" alt="Portões em fabricação" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/portao-03.jfif" alt="Portão com painéis horizontais" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/portao-04.jfif" alt="Portão vertical em oficina" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/cobertura-01.jfif" alt="Cobertura metálica" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/cobertura-02.jfif" alt="Detalhe da cobertura" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/cobertura-03.jfif" alt="Estrutura de cobertura" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/estrutura-cama.jfif" alt="Estrutura metálica de cama" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal">
+          <img src="images/works/estrutura-01.jfif" alt="Estrutura metálica" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE ========== -->
+  <section id="sobre" class="py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="images/owner.jfif" alt="Proprietário da Metal Tech Brasil" class="rounded-2xl object-cover h-72 w-full" />
+            <img src="images/working.jfif" alt="Soldagem em andamento" class="rounded-2xl object-cover h-72 w-full mt-8" />
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-6">Quem faz o trabalho</h2>
+          <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+            A <strong class="text-white">Metal Tech Brasil</strong> atua há <strong class="text-gold">7 anos</strong> em Araçatuba e região, 
+            oferecendo serviços de serralheria com foco em qualidade, prazo e garantia.
+          </p>
+          <p class="text-gray-400 mb-8 leading-relaxed">
+            Trabalhamos com portões, pergolados, estruturas metálicas, portas, coberturas e pintura. 
+            Cada projeto é feito sob medida, com atenção aos detalhes e compromisso com o cliente.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div>
+              <div class="text-3xl font-display font-bold text-gold">7</div>
+              <div class="text-sm text-gray-400">anos no mercado</div>
+            </div>
+            <div>
+              <div class="text-3xl font-display font-bold text-gold">100%</div>
+              <div class="text-sm text-gray-400">sob medida</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5518998268952?text=Olá! Gostaria de falar sobre um projeto."
+             target="_blank"
+             class="btn-gold inline-flex items-center gap-2 px-6 py-3 rounded-xl">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO / ORÇAMENTO ========== -->
+  <section id="contato" class="py-24 bg-gray-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Solicite um Orçamento</h2>
+        <p class="text-gray-400 text-lg">Preencha o formulário e retornamos pelo WhatsApp</p>
+      </div>
+
+      <form id="orcamento-form" class="bg-gray-900 border border-gray-800 rounded-2xl p-8 space-y-5 reveal">
+        <div>
+          <label class="block text-sm font-medium text-gray-300 mb-1.5">Seu nome</label>
+          <input type="text" name="nome" required placeholder="Como podemos te chamar?" class="form-input" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-300 mb-1.5">WhatsApp / Telefone</label>
+          <input type="tel" name="telefone" required placeholder="(18) 99999-9999" class="form-input" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-300 mb-1.5">Tipo de serviço</label>
+          <select id="tipo-servico" name="servico" required class="form-input">
+            <option value="" disabled selected>Selecione o serviço</option>
+            <option value="portao">Portão</option>
+            <option value="pergolado">Pergolado</option>
+            <option value="estrutura">Estrutura metálica</option>
+            <option value="cobertura">Cobertura</option>
+            <option value="porta">Porta</option>
+            <option value="pintura">Pintura de portão</option>
+            <option value="outro">Outro / Serralheria em geral</option>
+          </select>
+        </div>
+
+        <div id="campo-detalhe" class="dynamic-field">
+          <label class="block text-sm font-medium text-gray-300 mb-1.5">Detalhes do projeto</label>
+          <textarea name="detalhe" rows="3" placeholder="Conte mais sobre o que precisa..." class="form-input resize-none"></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-gold w-full py-4 rounded-xl text-lg flex items-center justify-center gap-2">
+          Enviar e Abrir WhatsApp
+        </button>
+
+        <p class="text-center text-xs text-gray-500">Ao enviar você será redirecionado para o WhatsApp com a mensagem pronta.</p>
+      </form>
+
+      <!-- Contato direto -->
+      <div class="mt-12 grid sm:grid-cols-3 gap-6 text-center reveal">
+        <div>
+          <div class="text-gold font-semibold mb-1">WhatsApp</div>
+          <a href="https://wa.me/5518998268952" class="text-gray-300 hover:text-white">(18) 99826-8952</a>
+        </div>
+        <div>
+          <div class="text-gold font-semibold mb-1">Email</div>
+          <a href="mailto:Juniofabricio852@gmail.com" class="text-gray-300 hover:text-white text-sm">Juniofabricio852@gmail.com</a>
+        </div>
+        <div>
+          <div class="text-gold font-semibold mb-1">Endereço</div>
+          <div class="text-gray-300 text-sm">Rua José Luis Mendes, 169<br>Araçatuba – SP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-3xl font-bold text-white mb-4">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="space-y-3">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Vocês atendem emergência?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Atendemos de segunda a sábado normalmente e fazemos atendimento de emergência quando necessário.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>O orçamento é gratuito?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. O orçamento é sem compromisso. Você só paga se autorizar a execução do serviço.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Tem garantia?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Todos os serviços são realizados com garantia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Qual o prazo de entrega?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Trabalhamos com entrega rápida e dentro do prazo combinado com o cliente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-black border-t border-gray-900 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <img src="images/logo.jfif" alt="Metal Tech Brasil" class="h-14 w-14 rounded-full object-cover border border-gold/40 shadow-md mb-4" />
+          <p class="text-gray-500 text-sm">Serralheria e Coberturas Metálicas em Araçatuba e região. Qualidade, prazo e garantia.</p>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold mb-3">Contato</div>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="https://wa.me/5518998268952" class="hover:text-gold">(18) 99826-8952</a></li>
+            <li><a href="mailto:Juniofabricio852@gmail.com" class="hover:text-gold">Juniofabricio852@gmail.com</a></li>
+            <li>Rua José Luis Mendes, 169</li>
+            <li>Araçatuba – SP</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="text-white font-semibold mb-3">Horário</div>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Segunda a Sábado</li>
+            <li>Emergência quando necessário</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-900 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-600">
+        <div>© <span id="ano"></span> Metal Tech Brasil. Todos os direitos reservados.</div>
+        <div>Serralheria em Araçatuba e região</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5518998268952?text=Olá! Vim pelo site da Metal Tech Brasil. Gostaria de um orçamento."
+     target="_blank" rel="noopener"
+     class="whatsapp-float"
+     aria-label="Chamar no WhatsApp">
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.85 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
